@@ -1,13 +1,10 @@
 
 /* PHONE VERSION */
 @media screen and (max-width:767px){
-    *{
-        border:1px solid blue;
-    }
-
+  
     /* main menu size */
     .main-menu-container{
-        border:1px solid red;
+
         width: 200px;
     }
     .main-menu-container button{

@@ -1,27 +1,17 @@
-at home screen, show
-game title: egg wrecker
+ The chickens have layed their eggs in the dog's territory. Since the dogs are very territorial, whoever tresspasses will face the consequences. You will play as one of the dogs to destroy the chicken's nests of eggs.
 
-Main Character: Egg wrecker - the character that attacks chicken eggs
-Side Character: Chicken - the other character that hides the eggs on their nests randomly
+Dog's have rockets with ammo. Chicken's have hidden their eggs on the field. The Dog's have no idea where exactly the eggs are hidden so you will have to launch attacks based on the field's coordinates and hopefully it lands a hit.
 
-instructions
-start
-eggs will be hidden by the chickens
-dogs will attack the hidden eggs using its rocket launcher
-
-eggs hidden is randomized in place and in count
-ammo is equal to the amount of hidden eggs with 2 additional extra
-
-Dog launches ammo to egg nests to wreck them, 
-player will have to guest the location of the hidden eggs by setting
-coordinates of their missile to launch into a 4 by 4 area
-if 75% of eggs are wrecked, dog(user) wins.
-
-system will randomize location of eggs on the nest using a constant
-2D array (4 rows and 4columns)
-
-
-game ends:
-ammo is zero
-when all eggs are cracked
-if end game button is clicked
+The chicken's plan to retrieve their eggs to save their kind. Wreck the eggs before they do so that they will never come back!
+Step 1:
+step 1 image
+The field to launch rockets to is a size of Four by Four.
+Step 2:
+step 2 image
+Set the Coordinates to target the field. Then click Launch
+Step 3:
+step 3 image
+The eggs are hidden somewhere in the field. You must guess which has eggs on them. When your attacks lands a hit, it will deduct the number of eggs. The field coordinates hit will become a crater when your attack lands a hit or a miss.
+Step 4:
+step 4 image
+The game ends if your Ammo is zero or you have wrecked all eggs on the field or if time limit has been reached.

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content = 'Ramelito Martinez'>
+    <meta name='description' content ='Egg Wrecker Game'>
+    <title>Egg Wrecker</title>
+    <link rel = 'stylesheet' type ='text/css' href='css/styles.css'>
+    <link rel = 'stylesheet' type ='text/css' href='css/mediaquery.css'>
+    <link rel="icon" type="image/x-icon" href="images/gameicon.ico">
+</head>
+<body>
+    
+    <!-- 
+        main section shows the egg wrecker logo
+        and the clickable buttons
+     -->
+    <main>
+        <!-- TITLE SCREEN SECTION -->
+        <section class ='main-home-container'>
+            <div class = 'eggwreckerlogo-container'>
+                <img src='images/homescreentitle.png' alt='alami chicken image'>
+            </div>
+            <div class ='main-menu-container'>
+                <button class = 'play-btn'>
+                    PLAY
+                </button>
+                <button class='instructions-btn'>
+                    INSTRUCTIONS
+                </button>
+            </div>
+            <div class = 'select-difficulty-container'>
+                <label for='select-difficulty'>
+                    Select Difficulty:
+                </label>
+                <select name='select-difficulty'
+                        id='select-difficulty'>
+                    <option value='select'>Select</option>
+                    <option value='easy'>Easy</option>
+                    <option value='medium'>Medium</option>
+                    <option value='hard'>Hard</option>
+                </select>
+            </div>
+            
+            <div class ='links-container'>
+                <div title = 'Watch Video on Youtube'>
+                    <a href = 'https://www.youtube.com/watch?v=2AxW7bNu3_Q&t=1s' target='_blank'>
+                        <img src = 'images/youtube.png'>
+                    </a>
+                </div>
+                <div title='Read Blog'>
+                    <a href = 'https://eggwrecker.blogspot.com/'  target='_blank'>
+                        <img src = 'images/blogspot.png'>
+                    </a>
+                </div>
+                <div title = 'Download Source Code'>
+                    <a href = 'downloads/p2-js-game.rar'  target='_blank'>
+                        <img src = 'images/download.png'>
+                    </a>
+                </div>
+            </div>
+            <div class='constructed-by-container'>
+                <div>
+                    constructed by
+                </div>
+                <div class='ram-little-container'>
+                    Ram Little
+                </div>
+            </div>
+        </section>
+     
+        <!-- INSTRUCTIONS SECTION -->
+        <section class ='instructions-container'>
+            <div class='x-btn-container'>
+                <button class = 'x-btn'>X</button>
+            </div>
+
+            <div class='instructions-sub-container'>
+                <div class='instructions-paragraph-container'>
+                    <img src='images/angrydog.png'
+                        alt='angry dog image'>
+                    <img src='images/scaredchicken.png'
+                        alt='chicken img'>
+                    <img src='images/egg.png'
+                        alt='egg img'>
+                    <p>
+                        The chickens have layed their eggs in the dog's territory.
+                        Since the dogs are very territorial, whoever tresspasses will
+                        face the consequences. You will play as one of the dogs to destroy the chicken's nests of eggs.
+                    </p>
+                    <p>
+                        Dog's have rockets with ammo. Chicken's have hidden their eggs on the field.
+                        The Dog's have no idea where exactly the eggs are hidden so you will have to 
+                        launch attacks based on the field's coordinates and hopefully it lands a hit.
+                    </p>
+                    <p>
+                        The chicken's plan to retrieve their eggs to save their kind. 
+                        Wreck the eggs before they do so that they will never come back!
+                    </p>
+                    <div class='gameplay-steps-container'>
+                        <div class = 'gameplay-step1-container'>
+                            <div>
+                                Step 1:
+                            </div>
+                            <div>
+                                <img src = 'images/step1.png' alt='step 1 image'>
+                            </div>
+                            <div>
+                                The field to launch rockets to is a size of Four by Four.
+                            </div>
+                        </div>
+
+                        <div class='gameplay-step2-container'>
+                            <div>
+                                Step 2:
+                            </div>
+                            <div>
+                                <img src = 'images/Step 2.png' alt='step 2 image'>
+                            </div>
+                            <div>
+                                Set the Coordinates to target the field. Then click Launch
+                            </div>
+                        </div>
+
+                        <div class='gameplay-step3-container'>
+                            <div>
+                                Step 3:
+                            </div>
+                            <div>
+                                <img src = 'images/Step 3.png' alt='step 3 image'>
+                            </div>
+                            <div>
+                                The eggs are hidden somewhere in the field. You must guess which
+                                has eggs on them. When your attacks lands a hit, it will deduct 
+                                the number of eggs. The field coordinates hit will become a crater when your
+                                attack lands a hit or a miss.
+                            </div>
+                        </div>
+
+                        <div class='gameplay-step4-container'>
+                            <div>
+                                Step 4:
+                            </div>
+                            <div>
+                                <img src = 'images/Step 4.png' alt='step 4 image'>
+                            </div>
+                            <div>
+                                The game ends if your Ammo is zero or you have wrecked all eggs 
+                                on the field or if time limit has been reached.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- GAME SECTION -->
+        <section class = 'game-container'>
+
+            <!-- this is the game header -->
+            <section class = 'ingame-header'>
+                <div class = 'header-image-container'>
+                    <img src='images/homescreentitle.png' alt='alami chicken image'>
+                </div>
+                
+                <div class = 'header-menu-container'>
+                    <div>
+                        Ammo:
+                    </div>
+                    <div class='ammo-container'>
+                        10
+                    </div>
+                    <div>
+                        Eggs Wrecked:
+                    </div>
+                    <div class='eggs-wrecked-container'>
+                        25
+                    </div>
+                    <div>
+                        Eggs Remaining:
+                    </div>
+                    <div class='eggs-remaining-container'>
+                        8
+                    </div>
+                    <div>
+                        Time Left:
+                    </div>
+                    <div class='time-left-container'>
+                        
+                    </div>
+                    <div class ='quit-button-container'>
+                        <button class = 'quit-game-btn'>QUIT GAME</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- this is where the game play happens -->
+            <section class='ingame-container'>
+                <div class = 'dog-container'>
+                    <img src = 'images/setcoordinates.png' 
+                        alt ='set coordinates img'
+                        class='set-coordinates-bubble'>
+                    <img src = 'images/launchnow.png' 
+                        alt ='attack again img'
+                        class='launch-now-bubble'>
+                    <img src='images/happydog.png' 
+                        alt ='stutter struck image happydog'
+                        class='happy-dog'>
+                    <img src='images/angrydog.png' 
+                        alt ='stutter struck image happydog'
+                        class='angry-dog'>
+                    <img src='images/rocketlaunch.gif'
+                        alt='gifer image explosion'
+                        class='rocket-launch'>
+                    <div class='row-coordinates-container'>
+                        <div class='row-coordinates-label'
+                            title='enter from 1 to 4 only'>
+                            Row:
+                        </div>
+                        <input type='number' 
+                            placeholder='row'
+                            class = 'row-coordinates'
+                            title='enter from 1 to 4 only'>
+                    </div>
+                    <div class='col-coordinates-container'>
+                        <div class='col-coordinates-label'
+                            title='enter from 1 to 4 only'>
+                            Column:
+                        </div>
+                        <input type='number' 
+                            placeholder='column'
+                            class = 'col-coordinates'
+                            title='enter from 1 to 4 only'>
+                    </div>                     
+                    <input type='button' 
+                        value = 'Launch'   
+                        class = 'launch-btn'> 
+                    <input type='button' 
+                        value = 'Set Coordinates' 
+                        class = 'set-coordinates-btn'> 
+                    <div class='coordinates-attacked'>
+                        Coordinates Attacked:
+                    </div>
+                    <div class='coordinates-entered-container'>
+                    </div>
+                </div>
+                <div class = 'fence-container'>
+                    <img src='images/woodenfence.png'>
+                </div>
+                <div class = 'eggnest-container'>
+                    <div class='eggnest'>
+                        <div class='eggs-image-remaining-container'>
+                            Eggs Remaining:
+                        </div>
+                        <div class='eggs-row1'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                        </div>
+                        <div class='eggs-row2'>
+                            <img src='images/egg.png'alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                            <img src='images/egg.png' alt ='egg image from pinteres'>
+                        </div>
+
+                    </div>
+                    <img src='images/explosion.gif'
+                        alt = 'pinterest image explosion'
+                        class='explosion'>
+                    <img src='images/attackmissed.gif'
+                        alt = 'canva image attack missed'
+                        class='attack-missed'>
+                
+                    <!-- Fields/Nest section -->
+                    <div class='field-coordinates-container'>
+                        <div class = 'field-coordinates-sub-container'>
+                            <table class='field-coordinates-table'>
+                                <!-- first row -->
+                                <tr>
+                                    <td class='row1-col1'>1X1</td>
+                                    <td class='row1-col2'>1X2</td>
+                                    <td class='row1-col3'>1X3</td>
+                                    <td class='row1-col4'>1X4</td>
+                                </tr>
+                                <!-- 2nd row -->
+                                <tr>
+                                    <td class='row2-col1'>2X1</td>
+                                    <td class='row2-col2'>2X2</td>
+                                    <td class='row2-col3'>2X3</td>
+                                    <td class='row2-col4'>2X4</td>
+                                </tr>
+                                <!-- 3rd row -->
+                                <tr>
+                                    <td class='row3-col1'>3X1</td>
+                                    <td class='row3-col2'>3X2</td>
+                                    <td class='row3-col3'>3X3</td>
+                                    <td class='row3-col4'>3X4</td>
+                                </tr>
+                                <!-- 4th row -->
+                                <tr>
+                                    <td class='row4-col1'>4X1</td>
+                                    <td class='row4-col2'>4X2</td>
+                                    <td class='row4-col3'>4X3</td>
+                                    <td class='row4-col4'>4X4</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class = 'chicken-container'>
+                    <img src = 'images/everybodyrun.png' 
+                        alt = 'everybody run bubble thought'>
+                    <img src = 'images/scaredchicken.png' 
+                        alt ='stutter struck image scaredchicken'>
+                    <img src = 'images/runningchicken.gif' 
+                        alt ='giphy  image running chicken'>
+                </div>
+            </section>
+        </section><!-- END TAG FOR GAME SECTION -->
+        
+        <section class = 'game-over-container'>
+            <div class = 'you-win-container'>
+                <img src='images/youwin.png' 
+                alt='you win image'>
+                <img src='images/chickencrying.gif' 
+                alt = 'chicken crying'
+                class='chicken-crying'>
+            </div>
+            <div class = 'you-loose-container'>
+                <img src='images/youloose.png' 
+                alt='you loose image'>
+                <img src='images/chickenpartying.gif' 
+                alt = 'chicken crying'
+                class='chicken-partying'>
+            </div>
+            <div class = 'score-info-container'>
+
+            </div>
+            <div class='end-button-container'>
+                <button class = 'end-btn'>
+                    END
+                </button>
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- all scripts here -->
+    <script src =js/script.js></script>
+</body>
+</html>
