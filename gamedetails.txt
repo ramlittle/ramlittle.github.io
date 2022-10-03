@@ -1,0 +1,27 @@
+at home screen, show
+game title: egg wrecker
+
+Main Character: Egg wrecker - the character that attacks chicken eggs
+Side Character: Chicken - the other character that hides the eggs on their nests randomly
+
+instructions
+start
+eggs will be hidden by the chickens
+dogs will attack the hidden eggs using its rocket launcher
+
+eggs hidden is randomized in place and in count
+ammo is equal to the amount of hidden eggs with 2 additional extra
+
+Dog launches ammo to egg nests to wreck them, 
+player will have to guest the location of the hidden eggs by setting
+coordinates of their missile to launch into a 4 by 4 area
+if 75% of eggs are wrecked, dog(user) wins.
+
+system will randomize location of eggs on the nest using a constant
+2D array (4 rows and 4columns)
+
+
+game ends:
+ammo is zero
+when all eggs are cracked
+if end game button is clicked

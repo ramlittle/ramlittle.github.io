@@ -1,0 +1,378 @@
+/*my default styles */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    width:100%;
+    font-family: Verdana;
+}
+
+/* make images follow size of container*/
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* MAIN SECTION */
+main{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    /* BG image taken from giphy */
+    background-image: url('../images/homescreenbg.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.main-home-container{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    width:80%;
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+    background: rgba(255, 122, 89, .2);
+    align-items: center;
+    justify-content: center;
+}
+.eggwreckerlogo-container{
+    width:80%;
+}
+.main-menu-container{
+    width:20%;
+    display: flex;
+    flex-direction: column;
+}
+.select-difficulty-container{
+    text-align:center;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-shadow:1px 1px black;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: small;
+}
+.select-difficulty-container > select{
+    background-color:#FF4500;
+    color: white;
+    padding:10px;
+}
+
+.main-menu-container button,
+.quit-game-btn,
+.set-coordinates-btn,
+.launch-btn,
+.reset-game-btn{
+    padding: 20px;
+    color: white;
+    background-color:#FF4500;
+    margin:5px;
+    font-size: large;
+    width: 98%;
+}
+.main-menu-container button:hover,
+.quit-game-btn:hover,
+.set-coordinates-btn:hover,
+.launch-btn:hover,
+.reset-game-btn:hover{
+    background-color: white;
+    color:#FF4500;
+}
+.constructed-by-container{
+    text-align:center;
+    font-size:medium;
+    padding:10px;
+    color:white;
+    text-shadow:1px 1px black;
+}
+.ram-little-container{
+    text-align:center;
+    font-size: large;
+    padding:10px;
+    font-family:cursive;
+    color: gold;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px black;
+}
+/* INSTRUCTIONS SECTION */
+
+.instructions-container{
+    display:none;
+    flex-direction: column;
+}
+.x-btn-container{
+    width:100%;
+    text-align: right;
+    margin-left:auto;
+    margin-right:auto;
+    background: rgba(255, 255, 200, .5);
+}
+.x-btn{
+    width: 5%;
+    padding:10px;
+    background-color:#FF4500;
+    font-weight: bold;
+    font-size: large;
+    color:white;
+}
+.x-btn:hover{
+    background-color: white;
+    color:#FF4500;
+}
+.instructions-paragraph-container{
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto;
+    background: rgba(255, 122, 89, .2);
+}
+.instructions-paragraph-container img{
+    width: 5%;
+    height:5%;
+}
+.instructions-paragraph-container p{
+    margin: 10px;
+    font-size: small;
+    color:black;
+    font-weight:bold;
+}
+.set-coordinates-img1,
+.set-coordinates-img2{
+    width: 500px;
+    height:500px;
+    border: 1px solid red;
+}
+.gameplay-steps-container{
+    display:flex;
+    flex-direction:row;
+    margin:10px;
+    width:100%;
+    font-size:small;
+    font-weight:bold;
+}
+.gameplay-step1-container,
+.gameplay-step2-container,
+.gameplay-step3-container,
+.gameplay-step4-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    margin:2px;
+}
+.gameplay-step1-container img,
+.gameplay-step2-container img,
+.gameplay-step3-container img,
+.gameplay-step4-container img{
+    width: 300px;
+    height: 200px;
+}
+/* GAME SECTION */
+
+/* IN GAME HEADER SECTION */
+.ingame-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.header-image-container{
+    width: 20%;
+}
+.header-menu-container{
+    display: flex;
+    flex-direction:row;
+    width:80%;
+    align-items: center;
+    text-align:center;
+    font-size:x-large;
+}
+.header-menu-container > div{
+    width: calc(80%/6);
+    padding: 10px;
+    font-weight:bold;
+    font-size:large;
+}
+.ammo-container,
+.eggs-wrecked-container,
+.eggs-remaining-container,
+.time-left-container{
+    background-color:white;
+    border:2px solid black;
+}
+.game-container{
+    height:100vh;
+    display:none;
+    flex-direction: column;
+}
+
+/* THIS IS THE GAME ITSELF where user interacts */
+.ingame-container{
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+    display:flex;
+    flex-direction: row;
+    background-image: url('../images/field.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fence-container{
+    width: 25%;
+}
+.eggnest-container{
+    width:35%;
+}
+.dog-container,
+.chicken-container{
+    width: 20%;
+}
+.dog-container > img,
+.chicken-container > img{
+    height: 20%;
+}
+.coordinates-attacked,
+.coordinates-entered-container{
+    background-color:white;
+    border:1px solid black;
+    padding: 10px;
+    text-align:center;
+    font-size:large;
+}
+.row-coordinates-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+.col-coordinates-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+.row-coordinates-label,
+.col-coordinates-label{
+    width:50%;
+    background-color: lightgrey;
+    margin:5px;
+    font-size:x-large;
+}
+.row-coordinates,
+.col-coordinates{
+    width:50%;
+    background-color: white;
+    margin:5px;
+    font-size:x-large;
+}
+.fence-container > img{
+    height: 100%;
+}
+
+.launch-btn,
+.row-coordinates,
+.col-coordinates,
+.row-coordinates-label,
+.col-coordinates-label,
+.launch-now-bubble,
+.angry-dog,
+.explosion,
+.attack-missed,
+.rocket-launch{
+    display: none;
+}
+
+/* this will position the rocket launch on the launcher */
+.rocket-launch{
+    position:absolute;
+    top:200px;
+    left:200px;
+    width:40px;
+    height:5px;
+}
+.eggnest{
+    display:flex;
+    flex-direction:column;
+}
+.eggnest img{
+    height: 8%;
+    width:8%;
+    border:1px solid white;
+}
+.eggs-image-remaining-container{
+    background-color:white;
+    margin:10px;
+    padding:10px;
+    width:50%;
+    font-weight: bold;
+    font-size:large;
+    border-radius:10px;
+}
+.eggs-row1,
+.eggs-row2{
+    display:flex;
+    flex-direction:row;
+}
+.field-coordinates-container{
+    margin:10px;
+    display:flex;
+}
+.field-coordinates-sub-container{
+    margin:10px;
+}
+.field-coordinates-table{
+    text-align:center;
+}
+.field-coordinates-table td{
+    width: 25%;
+    height: 70px;
+    border:1px solid white;
+    color:white;
+}
+/* GAME OVER SECTION */
+.game-over-container{
+    display:none;
+    flex-direction:column;
+    width:80%;
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+    background: rgba(255, 122, 89, .2);
+    justify-content: center;
+}
+
+.chicken-partying,
+.chicken-crying{
+    border-radius:50%;
+    width: 20%;
+    height:200px;
+    border:1px solid black;
+}
+.you-win-container,
+.you-loose-container{
+    display:none;
+    flex-direction:row;
+    align-items:center;
+    height:300px;
+}
+.score-info-container{
+    text-align:center;
+    background: rgba(255, 255, 255, .8);
+    padding:10px;
+    font-size:large;
+}
+.end-button-container{
+    width:100%;
+    text-align:center;
+}
+.end-btn{
+    padding: 20px;
+    color: white;
+    background-color:#FF4500;
+    margin:5px;
+    font-size: large;
+    width:30%;
+}
+
+
+
