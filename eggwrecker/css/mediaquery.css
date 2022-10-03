@@ -1,0 +1,68 @@
+
+/* PHONE VERSION */
+@media screen and (max-width:767px){
+    *{
+        border:1px solid blue;
+    }
+
+    /* main menu size */
+    .main-menu-container{
+        border:1px solid red;
+        width: 200px;
+    }
+    .main-menu-container button{
+        font-size:xx-small;
+    }
+
+    /* select difficulty */
+    .select-difficulty-container{
+        width:50%;
+    }
+
+    /* play section */
+    .header-menu-container{
+        height:50px;
+    }
+    .header-menu-container > div{
+        font-size:x-small;
+    }
+    .quit-button-container > button{
+        font-size:xx-small;
+        padding:2px;;
+    }
+
+    /* eggs nest remaining section */
+    .eggs-image-remaining-container{
+        width: 70%;
+        padding: 2px;
+        font-size: small;
+    }
+    
+    /* set coordinates section */
+    .set-coordinates-btn,
+    .coordinates-attacked,
+    .row-coordinates-label,
+    .row-coordinates,
+    .col-coordinates-label,
+    .col-coordinates{
+        font-size: small;
+        padding:5px;
+    }
+
+    /* launch button section */
+    .launch-btn{
+        padding: 4px;
+        font-size:small;
+    }
+    /* rocket launch */
+    .rocket-launch{
+        top:120px;
+        left:100px;;
+    }
+    /* fields coords */
+    .field-coordinates-table td{
+        height: 20px;
+    }
+    
+    
+}

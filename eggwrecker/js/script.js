@@ -93,7 +93,6 @@ const scoreInfoContainer=document.querySelector('.score-info-container');
 const fieldCoordinatesContainer=document.querySelector('.field-coordinates-container');
 const timeLeftContainer=document.querySelector('.time-left-container');
 const selectDifficulty = document.querySelector('#select-difficulty');
-const resetGameBtn=document.querySelector('.reset-game-btn');
 
 
 
@@ -210,11 +209,7 @@ playBtn.addEventListener('click', () => {
 
 });
 
-//RESET GAME BUTTON
-resetGameBtn.addEventListener('click',()=>{
-    window.location.reload();
-    clickPlayAgain();
-});
+
 //QUIT GAME BUTTON
 quitGameBtn.addEventListener('click',()=>{
     if (confirm('Would you like to Exit? Click Ok to return to Home Screen')){
