@@ -136,18 +136,18 @@ const row4Col4 = document.querySelector('.row4-col4');
 
 
 //SOUND VARIABLES
-const cucoSound = new Audio('../sounds/cuco.mp3');
-const confirmSound = new Audio('../sounds/confirm.mp3');
-const homeSound = new Audio('../sounds/youloosesound.mp3');
-const runSound = new Audio('../sounds/run.mp3');
-const playGameSound = new Audio('../sounds/gameplaysound.mp3');
-const bazookaSound = new Audio('../sounds/bazookasound.mp3');
-const explosionSound = new Audio('../sounds/explosionSound.mp3');
-const youWinSound = new Audio('../sounds/youwinsound.mp3');
-const youLooseSound = new Audio('../sounds/youloosesound.mp3');
-const applauseSound = new Audio('../sounds/applausesound.mp3');
-const audienceLaughSound = new Audio('../sounds/audiencelaughsound.mp3');
-const dogBarkSound = new Audio('../sounds/dogbark.wav');
+const cucoSound = new Audio('sounds/cuco.mp3');
+const confirmSound = new Audio('sounds/confirm.mp3');
+const homeSound = new Audio('sounds/youloosesound.mp3');
+const runSound = new Audio('sounds/run.mp3');
+const playGameSound = new Audio('sounds/gameplaysound.mp3');
+const bazookaSound = new Audio('sounds/bazookasound.mp3');
+const explosionSound = new Audio('sounds/explosionSound.mp3');
+const youWinSound = new Audio('sounds/youwinsound.mp3');
+const youLooseSound = new Audio('sounds/youloosesound.mp3');
+const applauseSound = new Audio('sounds/applausesound.mp3');
+const audienceLaughSound = new Audio('sounds/audiencelaughsound.mp3');
+const dogBarkSound = new Audio('sounds/dogbark.wav');
 
 
 //timer
