@@ -136,18 +136,18 @@ const row4Col4=document.querySelector('.row4-col4');
 
 
 //SOUND VARIABLES
-const cucoSound=new Audio('../sounds/cuco.mp3');
-const confirmSound=new Audio('../sounds/confirm.mp3');
+const cucoSound=new Audio('https://ramlittle.github.io/sounds/cuco.mp3');
+const confirmSound=new Audio('https://ramlittle.github.io/sounds/confirm.mp3');
 const homeSound=new Audio('https://ramlittle.github.io/sounds/youloosesound.mp3');
-const runSound=new Audio('../sounds/run.mp3');
-const playGameSound=new Audio('../sounds/gameplaysound.mp3');
-const bazookaSound=new Audio('../sounds/bazookasound.mp3');
-const explosionSound=new Audio('../sounds/explosionSound.mp3');
-const youWinSound=new Audio('../sounds/youwinsound.mp3');
-const youLooseSound=new Audio('../sounds/youloosesound.mp3');
-const applauseSound=new Audio('../sounds/applausesound.mp3');
-const audienceLaughSound=new Audio('../sounds/audiencelaughsound.mp3');
-const dogBarkSound=new Audio('../sounds/dogbark.wav');
+const runSound=new Audio('https://ramlittle.github.io/sounds/run.mp3');
+const playGameSound=new Audio('https://ramlittle.github.io/sounds/gameplaysound.mp3');
+const bazookaSound=new Audio('https://ramlittle.github.io/sounds/bazookasound.mp3');
+const explosionSound=new Audio('https://ramlittle.github.io/sounds/explosionSound.mp3');
+const youWinSound=new Audio('https://ramlittle.github.io/sounds/youwinsound.mp3');
+const youLooseSound=new Audio('https://ramlittle.github.io/sounds/youloosesound.mp3');
+const applauseSound=new Audio('https://ramlittle.github.io/sounds/applausesound.mp3');
+const audienceLaughSound=new Audio('https://ramlittle.github.io/sounds/audiencelaughsound.mp3');
+const dogBarkSound=new Audio('https://ramlittle.github.io/sounds/dogbark.wav');
 
 
 //timer
