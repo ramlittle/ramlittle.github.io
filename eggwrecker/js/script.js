@@ -138,7 +138,7 @@ const row4Col4=document.querySelector('.row4-col4');
 //SOUND VARIABLES
 const cucoSound=new Audio('../sounds/cuco.mp3');
 const confirmSound=new Audio('../sounds/confirm.mp3');
-const homeSound=new Audio('../sounds/homesound.mp3');
+const homeSound=new Audio('https://ramlittle.github.io/sounds/youloosesound.mp3');
 const runSound=new Audio('../sounds/run.mp3');
 const playGameSound=new Audio('../sounds/gameplaysound.mp3');
 const bazookaSound=new Audio('../sounds/bazookasound.mp3');
