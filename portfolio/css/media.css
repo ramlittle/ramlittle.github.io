@@ -1,0 +1,237 @@
+/* all media styles here*/
+
+
+/*make responsive page with tablet size*/
+@media screen and (min-width: 768px) and (max-width:991px) {
+    
+  /* HEADER SECTION */
+    header{   
+      flex-flow: column wrap;
+    }
+    .header-logo-container,
+    .navigation-container > nav{
+        width:100%;
+    }
+    .home-sub-content-words,
+    .home-sub-image-container{
+        height: 50vh;
+    }
+    
+/* RESUME SECTION */
+    .resume-section{
+      height:80vh;
+    }
+    /* TECH SECTION */
+    .technologies-words{
+      font-size:50px;
+    }
+    .technologies-container{
+      height: auto;
+    }
+  
+    /* SERVICES SECTION */
+    .service-cards{
+      height:50vh;
+    }
+
+    /* CONTACT ME SECTION */
+    .contactme-container{
+      height: 80vh;
+     }
+     .form-btn{
+      margin:10px;
+      width: 35%;
+     }
+    
+
+     /* FOOTER SECTION */
+     footer{
+      height:40vh;
+     }
+     .footer-card{
+      margin:0;
+     }
+  }
+
+
+
+
+
+
+
+
+
+
+/*media sizing for phones*/
+@media screen and (max-width: 767px) {
+
+    .navigation-container > nav{   
+      flex-flow: column wrap;
+    }
+    .header-logo-container,
+    .navigation-container > nav{
+        width:100%;
+    }
+    /* my links will not appear when screen size is phone */
+    #myLinks{
+      display:none;
+    }
+    /* the burger button will appear when screen size is phone */
+    .icon{
+      display:inline;
+      width:20%;
+      background-color:#333;
+    }
+    .icon > div{
+      /* this is the design of the divs under icon of menu */
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 0;
+    }
+    .home-sub-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+    }
+    .home-sub-image-container{
+      height:50vh;
+      width: 100%;
+      display:flex;
+      order: 2;
+    }
+    .card-container{
+      flex-direction: column;
+    }
+    .card{
+      width:80%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .home-sub-content-words{
+      /* border: 1px solid red; */  
+      width: 100%;
+      height:100vh;
+     }
+     .home-sub-image-container{
+      /* makes the home images fit the screen when in mobile version */
+      height: 50vh;
+     }
+     .resume-section{
+      /* makes cards when flex to column fit the resume section */
+      height: 100%;
+     }
+     .technologies-words{
+      font-size:xx-large;
+      margin:0px;
+      height: auto;
+      padding: 50px;
+     }
+     .technologies-container{
+      /* makes tech images wrap in the row section */
+      flex-direction: column;
+      height:auto;
+      /* padding: 20px; */
+     }
+     .fieldset-container{
+      width: 100%;
+     }
+     /* media for tech cards */
+     .tech-cards{
+      height:100px;
+      width:200px;
+      margin-left:auto;
+      margin-right:auto;
+  
+     }
+
+     /*media for services*/
+     .services-container{
+        height:auto;
+     }
+     .services-words{
+      font-size:x-large;
+      height: 20vh;
+     }
+     .service-cards{
+      flex-direction:column;
+      width: 80%;
+     }
+     .service-cards-content{
+      height: 20vh;
+     }
+
+     /* media for projects */
+     .projects-container{
+      height: auto;
+      padding: 20px;
+     }
+     .projects-cards{
+      flex-direction: column;
+     }
+     .projects-words{
+      height: 10vh;
+     }
+     .projects-words h2{
+      font-size: xx-large;
+     }
+     .projects-cards-content{
+      height:40vh;
+     }
+     
+     /* media for contact me form */
+     .contactme-container{
+      height: auto;
+     }
+     .mainform-container{
+      flex-direction:column;
+      width:100%;
+      
+     }
+     .form-container{
+      width:100%;
+     }
+     .form-sub-container{
+         display:flex;
+         flex-direction: column;
+     }  
+     .form-sub-container input{
+        width:100%;
+     }
+     .form-btn{
+       width:100%;
+       margin:10px;
+     }
+     .image-container{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+      width:100%;
+      text-align:center;
+     }
+     .image-container div{
+        text-align:center;
+     }
+     .image-container img{
+        margin-top:-10px;
+        height: 200px;
+        width: 200px;
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+     }
+     /* FOOTER SECIONT */
+    footer{
+      height: auto;
+      flex-direction:column;
+      flex-wrap: nowrap;
+      width:100%;
+    }
+    .footer-card{
+      margin:0;
+      width: 100%;
+      
+    }
+  }

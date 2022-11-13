@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Ramelito Martinez'>
+    <meta name='description' content='Ram's web portfolio Project'>
+    <title>Ram Little | Web Portfolio</title>
+    <link rel = 'stylesheet' type='text/css' href='css/styles.css'>
+    <link rel = 'stylesheet' type='text/css' href='css/media.css'>
+</head>
+<body>
+    <!--this is the back to top button
+    taken from w3schools
+    not familiar with javascript yet
+    -->
+    <button onclick='topFunction()' id='myBtn' title='Go to top'>Top</button>
+    
+    <header>
+        <!--logo section-->
+        <section class ='header-logo-container'>
+            <strong>
+                <a href=''>Ram Little</a>
+            </strong>
+        </section>
+
+        <!--nav section-->
+        <section class='navigation-container'>
+            <nav id ='myLinks'>
+                <a href='#home'>Home</a>
+                <a href='#resume'>Resume</a>
+                <a href='#technologies'>Technologies</a>
+                <a href='#services'>Services</a>
+                <a href='#projects'>Projects</a>
+                <a href='#contactme'>Contact Me</a>
+            </nav>
+        </section>
+        <!--this is the burger icon, only 
+            appears when browser size is
+            phone size
+        -->
+        <button class='icon'onclick='myFunction()'>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </header>
+
+    <main>
+        <!--Home-->
+        <section id='home' class='home-container'>
+            
+            <!--HERO home section-->
+            <div class='home-sub-container'>
+                <div class='home-sub-image-container'>
+                    <img src='images/ram_contact_me_2.png' alt = 'rams image'>
+                </div>
+                <div class='home-sub-content-words'>
+                        <h2>Freelance Web Designer</h2>
+                        <h2>Based in Baguio City, Philippines</h2>
+                        <h1>
+                            Ram Martinez
+                         </h1>
+                        <h2>
+                           Let's Work Together!
+                        </h2>
+                    <div>
+                        <br><br>
+                        <a href='#contactme'>Contact Me</a>
+                        <a href='#projects'>My Works</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </section>
+    
+        <!--Resume-->
+        <section id='resume' class='resume-section'>
+            <!--Work Experience section-->
+            <h2>Work Experience</h2>
+            <a href='docs/ramcv.docx' download='Ramelito Martinez CV'>Download CV</a> 
+            <div class='card-container'>
+               
+                    <div class='card'>
+                        <!--freelance web section-->
+                        <div class='card-content'>
+                            <div>
+                                <h3>Freelance Web Designer</h3>
+                            </div>
+                            <div>Coastal Real Estate Academy</div>
+                            <div>2022-Present</div>
+                            <div>adept in using HTML, CSS, Javascript</div>
+                            <div>Bootstrap Framework</div>
+                        </div>
+                    </div>
+        
+                    <div class='card'>
+                        <!--wordpress section-->
+                        <div class='card-content'>
+                            <div>
+                                <h3>Wordpress Content Creator</h3>
+                            </div>
+                            <div>Coastal Real Estate Academy</div>
+                            <div>2021-Present</div>
+                            <div>Updating website content</div>
+                            <div>Plugin Management</div>
+                            <div>Forms and User Input</div>
+                        </div>
+                    </div>
+        
+                    <!--IT Support Team Lead section-->
+                    <div class='card'>
+                        <div class='card-content'>
+                            <div>
+                                <h3>IT Support Team Lead</h3>
+                            </div>
+                            <div>Noble Trends Unbound, Inc.</div>
+                            <div>2020-Present</div>
+                            <div>Managed a group of 4</div>
+                            <div>Delagation of Tasks according to skill set</div>
+                            <div>Website Control Panel Administration (HostGator and GoDaddy)</div>
+                            <div>Local Web Server Admin</div>
+                        </div>
+                        
+                    </div>
+        
+                    <!--IT Support-->
+                    <div class='card'>
+                        <div class='card-content'>
+                            <div>
+                                <h3>IT Support</h3>
+                            </div>
+                            <div>Noble Trends Unbound, Inc.</div>
+                            <div>2013-2020</div>
+                            <div>Managed Agent Workstations</div>
+                            <div>Provide Technical Support in person or over the phone</div>
+                            <div>Made sure uptime is at 100%</div>
+                        </div>
+                        
+                    </div>
+                  
+                </div>
+                
+                
+            
+        </section>
+
+        <!--Technologies-->
+        <section id='technologies' >
+            <div class='technologies-words'>
+                <h2>I am familiar with</h2>
+            </div>
+
+             
+            <div class='technologies-container'>
+                <!-- Web Design -->
+                <fieldset class = 'fieldset-container'>
+                    <legend>Web Design:</legend>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-html.png' alt='html image'>
+                        <div>HTML</div>
+                    </div>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-css.svg' alt='css image'>
+                        <div>CSS</div>
+                    </div>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-js.png' alt = 'js image'>
+                        <div>JAVASCRIPT</div>
+                    </div>
+                </fieldset>
+                
+                <!-- Panel Administration -->
+                <fieldset class = 'fieldset-container'>
+                    <legend>Panel Administration:</legend>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-sql.png' alt='sql image'>
+                        <div>SQL</div>
+                    </div>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-git.png' alt='git image'>
+                        <div>GIT</div>
+                    </div>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-filezilla.png' alt='filezilla image'>
+                        <div>FILEZILLA</div>
+                    </div>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-cpanel.jpg' alt='tech-canva image'>
+                        <div>CPANEL</div>
+                    </div>
+                </fieldset>
+
+                <!-- Content Management System -->
+                <fieldset class = 'fieldset-container'>
+                    <legend>Content Management System:</legend>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-wordpress.png' alt='wordpress image'>
+                        <div>WORDPRESS</div>
+                    </div>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-elementor.svg' alt='elementor image'>
+                        <div>ELEMENTOR</div>
+                    </div>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-ninja.png' alt='ninja form image'>
+                        <div>NINJA FORMS</div>
+                    </div>
+                </fieldset>
+                
+                <!-- Photo and Vide Editing -->
+                <fieldset class = 'fieldset-container'>
+                    <legend>Photo and Video Editing:</legend>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-photoshop.png' alt='photoshop image'>
+                        <div>PHOTOSHOP</div>
+                    </div>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-premiere.png' alt='tech-premiere image'>
+                        <div>PREMIERE</div>
+                    </div>
+                    <div class='tech-cards'>
+                        <img src = 'images/tech-canva.jpg' alt='tech-canva image'>
+                        <div>CANVA</div>
+                    </div>
+                </fieldset> 
+            </div>
+        </section>
+        <!--What I do-->
+        <section id='services' class='services-container'>
+            <div class='services-words'>
+                <h2>Services</h2>
+                <h3>I can help you in</h3>
+            </div>
+            
+            <div class='service-cards'>
+                <div class='service-cards-content'>
+                    Web Design
+                </div>
+    
+                <div class='service-cards-content'>
+                    Web Development
+                </div>
+    
+                <div class='service-cards-content'>
+                    SEO
+                </div>
+    
+                <div class='service-cards-content'>
+                    Data Analysis
+                </div>
+            </div>
+            
+        </section>
+        
+        <!--Gallery-->
+        <section id='projects' class='projects-container'>
+            
+            <div class='projects-words'>
+                <h2>Projects Gallery</h2>
+            </div>
+
+            <div class='projects-cards'>
+                    <div class='projects-sub-cards'>
+                        <iframe class ='projects-cards-content'src='https://coastalrealestateacademy.com/'></iframe>
+                        </iframe>
+                        <h3>Coastal Real Estate Academy</h3>
+                        <div><a href='https://coastalrealestateacademy.com/'target='_blank'>Visit</a></div>
+                        <div>Created in Wordpress</div>
+                    </div>
+                    
+                    <div class='projects-sub-cards'>
+                        <iframe class = 'projects-cards-content'src='http://www.ntu-nobletrends.com/' target='_blank'>
+                        </iframe>
+                        <h3>Noble Trends Unbound, Inc.</h3>
+                        <div><a href='https://www.ntu-nobletrends.com/' target='_blank'>Visit</a></div>
+                        <div>Created in HTML, CSS and JAVASCRIPT</div>
+                    </div>
+                    
+            </div>
+        </section>
+
+        <!--Contact Me-->
+        <section id = 'contactme' class='contactme-container'>
+                <!--full form-->
+                <h2>Contact Me</h2>
+                <form class='mainform-container'>
+                    <div class='form-container'>
+                        <!--data gather section-->
+                        <div class='form-sub-container'>
+                            <label for='name'>Name:</label>
+                            <input type='text' name='name' placeholder='Your Name here'>
+                        </div>
+                        <div class='form-sub-container'>
+                            <label for='email'>Email:</label>
+                            <input type='email' name='email' placeholder = 'example@domain.com'>
+                        </div>
+                        
+                        <div class='form-sub-container'>
+                            <label for='subject'>Subject:</label>
+                            <input type='text' name='subject' placeholder ='I would like to hire you!'>
+                        </div>
+                        <div class='form-sub-container'>
+                            <label for='message'>Message:</label>
+                            <textarea name='message' cols='50'rows='10' placeholder='I need help with my website design...'></textarea>
+                        </div>
+                        <div class='form-btn-container'>
+                            <input type = 'submit' value = 'Submit' class = 'form-btn'>
+                            <input type='reset' value = 'Reset' class = 'form-btn'>
+                        </div>
+                        
+                    </div>
+                    <!--image section-->
+                    <div class='image-container'>
+                        <div>Let's Work together!</div>
+                        <div>Drop Me a Line!</div>
+                        <div>
+                            <img class='mySlides' src ='images/ram_home2.png' alt='Ram's Image'>
+                            <img class='mySlides' src = 'images/ram_contact_me1b.png' alt ='Ram's Image'>
+                            <img class='mySlides' src = 'images/ram_home1b.png' alt ='Ram's Image'>
+                        </div>
+                    </div>
+                </form>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <!--Socials-->
+        <section class='footer-card'>
+            <h2>Social Connections</h2>
+            <!--linkein-->
+            <div class='footer-card-container'>
+                <a href='https://www.linkedin.com/in/ramelito-martinez-a28696119'>
+                    <img src ='images/social-linkein.png' alt='linkedin photo'>
+                </a>
+            </div>
+
+            <!--gitlab-->
+            <div class='footer-card-container'>
+                <a href='https://gitlab.com/ramelitomartinez'>
+                    <img src ='images/social-gitlab.png' alt='gitlab photo'>
+                </a>
+            </div>
+
+            <!--upwork-->
+            <div class='footer-card-container'>
+                <a href='https://www.upwork.com/freelancers/~013548b73167b35723'>
+                    <img src ='images/social-upwork.png' alt='upwork photo'>
+                </a>
+            </div>
+
+            <!--youtube-->
+            <div class='footer-card-container'>
+                <a href='https://www.youtube.com/watch?v=Tr00CTXJSGk'>
+                    <img src ='images/social-youtube.png' alt='youtube photo'>
+                </a>
+            </div>
+            
+            <!--facebook-->
+            <div class='footer-card-container'>
+                <a href='https://www.facebook.com/mar.ram.3979/'>
+                    <img src ='images/social-facebook.png' alt='facebook photo'>
+                </a>
+            </div>
+
+            <!--instagram-->
+            <div class='footer-card-container'>
+                <a href='https://www.instagram.com/onthego_ram/'>
+                    <img src ='images/social-instagram.svg' alt='instagram photo'>
+                </a>
+            </div>
+
+        </section>
+
+        <!--menu-->
+        <section class='footer-card'>
+            <h2>Links</h2>
+            <nav>
+                <a href='#home'>Home</a>
+                <a href='#resume'>Resume</a>
+                <a href='#technologies'>Technologies</a>
+                <a href='#services'>Services</a>
+                <a href='#projects'>Projects</a>
+                <a href='#contactme'>Contact Me</a>
+            </nav>
+        </section>
+
+        <!--What I Do-->
+        <section class = 'footer-card'>
+            <h2>Services</h2>
+            
+            <div>
+                Web Design
+            </div>
+
+            <div>
+                Web Development
+            </div>
+
+            <div>
+                SEO
+            </div>
+
+            <div>
+                Data Analysis
+            </div>
+        </section>
+
+        <!--Don't be a Stranger!-->
+        <section class='footer-card'>
+            <h2>Have Questions?</h2>
+            <div>Don't be a stranger.</div>
+            <div>Contact Me!</div>
+            <div>
+                <div>
+                    address: <address>Baguio City, Benguet 2600 Philippines</address>
+                </div>
+                <div>
+                    phone: (074)-246-9688
+                </div>
+                <div>
+                    email: <a href='mailto:ramelitomartinez@gmail.com'>ramelitomartinez@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+      
+    </footer>
+    <section class='copy-section'>
+        Copyright &copy 2022 All rights reserved
+    </section>
+
+
+    <!--script for back to top button
+    
+    taken from w3schools
+    -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById('myBtn');
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = 'block';
+          } else {
+            mybutton.style.display = 'none';
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+        <!--the script below displays the navigation
+        taken from w3schools-->
+
+        <script>
+            function myFunction() {
+            //var for the navigation
+              var x = document.getElementById('myLinks');
+              
+              if (x.style.display === 'none') {
+                x.style.display = 'flex';
+              } else {
+                x.style.display = 'none';
+              }
+
+             
+              
+            }
+        </script>
+        <!-- SCRIPT FOR CAROUSEL SLIDESHOW FROM CONTACT ME SECTION
+        Also taken from w3schools -->
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName('mySlides');
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = 'none';  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = 'block';  
+              setTimeout(carousel, 5000); // Change image every 2 seconds
+            }
+            </script>
+</body>
+</html>
